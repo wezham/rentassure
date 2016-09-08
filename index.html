@@ -22,8 +22,18 @@
         <input type="email" placeholder="Email">
       </div>
       <div class='submit-button'>
-        <button value="submit">Sign up</button>
+        <button value="submit" onclick="trackGa()">Sign up</button>
       </div>
     </form>
   </div>
 </body>
+
+
+<script type="text/javascript">
+ga('send', {
+    hitType: 'event',
+    eventCategory: 'Sign up to beta',
+    eventAction: 'register button',
+    eventLabel: 'Rent assure beta'
+    });
+</script>
