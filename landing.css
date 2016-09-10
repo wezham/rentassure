@@ -26,13 +26,19 @@ p {
 }
 .form-fields input {
   margin-left: 15%;
-  margin-top: 30px;
+  margin-top: 20px;
+  width: 70%;
+  height: 13%;
+}
+.form-fields textarea {
+  margin-left: 15%;
+  margin-top: 20px;
   width: 70%;
   height: 13%;
 }
 .submit-button{
   position: relative;
-  top: 100px;
+  top: 70px;
     left: 15%;
 }
 .submit-button button{

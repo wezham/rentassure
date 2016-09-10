@@ -21,6 +21,9 @@
       <div class="form-fields">
         <input type="email" placeholder="Email">
       </div>
+      <div class="form-fields">
+        <textarea placeholder="Any other questions you may have"></textarea>
+      </div>
       <div class='submit-button'>
         <button value="submit" onclick="trackGa()">Sign up</button>
       </div>
@@ -30,10 +33,14 @@
 
 
 <script type="text/javascript">
-ga('send', {
-    hitType: 'event',
-    eventCategory: 'Sign up to beta',
-    eventAction: 'register button',
-    eventLabel: 'Rent assure beta'
-    });
+
+trackGa = function(){
+  console.log("Google sent");
+  ga('send', {
+      hitType: 'event',
+      eventCategory: 'Sign up to beta',
+      eventAction: 'register button',
+      eventLabel: 'Rent assure beta'
+      });
+}
 </script>
