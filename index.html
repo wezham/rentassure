@@ -84,11 +84,16 @@
           <h4></h4>
           <div class="container">
               <div class="col s6 center">
-                  <input type="text">Name
+                  <input id="name" type="text">Name
               </div>
               <div class="col s6 center">
-                  <input type="text">Email
+                  <input id="email" type="text">Email
               </div>
+          </div>
+          <div class="container">
+            <div class="col s12 center">
+              <a id="button" onclick="submit()" class="waves-effect waves-light btn">Submit</a>
+            </div>
           </div>
         </div>
       </div>
@@ -101,6 +106,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/email.js"></script>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   </body>
 </html>
